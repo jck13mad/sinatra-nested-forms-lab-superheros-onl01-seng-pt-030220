@@ -9,7 +9,8 @@ class App < Sinatra::Base
       erb :super_hero
     end
     
-    get 
+    post '/teams' do
+      
     
     
 
