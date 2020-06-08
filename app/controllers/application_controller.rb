@@ -15,6 +15,7 @@ class App < Sinatra::Base
       @team_members = params[:team][:members]
       @powers = []
       @name = []
+      @bios = []
       
     
     
