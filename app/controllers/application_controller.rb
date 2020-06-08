@@ -17,7 +17,7 @@ class App < Sinatra::Base
       @name = []
       @bios = []
       @team_members.each do |team_member|
-        @names << 
+        @names << team_member.name
         
     
     
