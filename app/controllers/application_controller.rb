@@ -16,7 +16,7 @@ class App < Sinatra::Base
       @powers = []
       @name = []
       @bios = []
-      @team_members 
+      @team_members.each do 
     
     
 
