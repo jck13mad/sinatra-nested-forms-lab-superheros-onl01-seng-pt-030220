@@ -21,9 +21,7 @@ class App < Sinatra::Base
         @bios << team_member[:bios]
         @powers << team_member[:powers]
       end
-      erb :team
+      erb :team 
+    end
         
-    
-    
-
 end
