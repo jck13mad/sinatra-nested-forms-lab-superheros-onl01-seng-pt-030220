@@ -19,7 +19,8 @@ class App < Sinatra::Base
       @team_members.each do |team_member|
         @names << team_member[:name]
         @bios << team_member[:bios]
-        
+        @powers << team_member[:powers]
+      end
         
     
     
