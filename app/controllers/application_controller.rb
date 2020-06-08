@@ -6,22 +6,24 @@ class App < Sinatra::Base
     
     
     get '/' do
-      erb :super_hero
+        erb :super_hero
     end
-    
+
     post '/teams' do
-      @team_name = params[:team][:name]
-      @team_motto = params[:team][:motto]
-      @team_members = params[:team][:members]
-      @powers = []
-      @names = []
-      @bios = []
-      @team_members.each do |team_member|
-        @names << team_member[:name]
-        @bios << team_member[:bios]
-        @powers << team_member[:powers]
-      end
-      erb :team 
+        # binding.pry
+        @team_name = params[:team][:name]
+        @team_motto = params[:team][:motto]
+        @team_members = params[:team][:members]
+        @powers = []
+        @names = []
+        @bios = []
+        @team_members.each do |team_member|
+            @names << team_member[:name]
+            @bios << team_member[:bio]
+            @powers << team_member[:power]
+        end
+        erb :team
     end
-        
-end
+
+
+end	end
